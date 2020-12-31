@@ -1,0 +1,29 @@
+*{
+ margin: 0;
+ padding: 0;
+ border-radius: border-box;
+}
+
+.root, body, html{
+ width: 100%;
+ height: 100%;
+ display: flex;
+ background-color: #1E1F26;
+}
+
+#_2e23k{
+  width: 100%;
+  height: 100%;
+}
+
+._3v91ñ{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+}
+._3v91m button#_3v91x{
+  width: 70px;
+  height: 23px;
+  border-radius: 50% #1E1F26;
+  background-color: rgba(500, 0, 0, 0.5);();
+}
