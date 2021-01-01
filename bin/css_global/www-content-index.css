@@ -25,5 +25,6 @@
   width: 70px;
   height: 23px;
   border-radius: 50% #1E1F26;
-  background-color: rgba(500, 0, 0, 0.5);();
+  background-color: rgba(500, 0, 0, 0.5);
+  cursor: pointer;
 }
