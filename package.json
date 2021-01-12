@@ -1,0 +1,26 @@
+{
+  "name": "ladorachula.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "node": "^15.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ladorachula/ladorachula.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ladorachula/ladorachula.github.io/issues"
+  },
+  "homepage": "https://github.com/ladorachula/ladorachula.github.io#readme"
+}

@@ -11,6 +11,12 @@
   background-color: #1E1F26;
 }
 
+header{
+background-color: #820fbf;
+width: 100%;
+height: 7%;
+}
+
 #_2e23k {
   width: 100%;
   height: 100%;
@@ -28,4 +34,39 @@
   border-radius: 50% #1E1F26;
   background-color: rgba(500, 0, 0, 0.5);
   cursor: pointer;
+}
+._4d24g, ._4d24h, ._4d24b{
+ color: #fff;
+ font-size: 17px;
+ font-family: monospace;
+ text-decoration: underline #fff;
+}
+
+._4d24g{
+ cursor: pointer;
+ position: absolute;
+ top: 8px;
+ right: 162px;
+}
+
+._4d24h{
+ position: absolute;
+ top: 8px;
+ right: 100px;
+}
+
+._4d24b{
+  position: absolute;
+  top: 8px;
+  right: 30px;
+}
+
+#_5f48x{
+ width: 15%;
+ height: 34%;
+ border-radius: 60%;
+ position: absolute;
+ top: 35%;
+ right: 43.5%;
+ white-space: nowrap;
 }
