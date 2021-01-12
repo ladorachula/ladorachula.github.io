@@ -7,7 +7,7 @@ app.engine("html", require('ejs').renderFile);
 app.set("view engine", "ejs");
 
 app.get("/es/", (req, res) => {
- res.render("https://ladorachula.github.io/bin/views_ooc/es.html")
+ res.sendFile("https://ladorachula.github.io/bin/views_ooc/es.html")
 });
 
 app.get("/en/", (req, res) => {
