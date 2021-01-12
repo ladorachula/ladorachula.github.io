@@ -1,25 +1,24 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const router = express.Router();
 
 app.engine("html", require('ejs').renderFile);
 app.set("view engine", "ejs");
 
-router.get("/es/", (res, req) => {
- res.render("https://ladorachula.github.io/views_ooc/es.html");
+app.get("/es/", (res, req) => {
+ res.render("./bin/views_ooc/es.html");
 });
 
-router.get("/en/", (res, req) => {
- res.render("https://ladorachula.github.io/views_ooc/en.html");
+app.get("/en/", (res, req) => {
+ res.render("./bin/views_ooc/en.html");
 });
 
-router.get("/github", (res, req) => {
- res.render("https://ladorachula.github.io/views_ooc/github.html");
+app.get("/github", (res, req) => {
+ res.render("./bin/views_ooc/github.html");
 });
 
-router.get("/discord", (res, req) => {
- res.render("https://ladorachula.github.io/views_ooc/discord.html");
+app.get("/discord", (res, req) => {
+ res.render(".7bin/views_ooc/discord.html");
 });
 
-module.exports = router;
+module.exports = app;
