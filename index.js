@@ -1,41 +1,32 @@
 const express = require("express");
-const app = express();
+const router = express();
 const path = require("path");
+var router = express.Router();
 
-app.engine("html", require('ejs').renderFile);
-app.set("view engine", "ejs");
+router.use(function timeLog (req, res, next) {
+  console.log('Time: ', Date.now())
+  next()
+})
 
-app
+router
  .get("/es/", function(req, res) => {
  res.reder("https://ladorachula.github.io/bin/views_ooc/es.html")
  })
- .post(function(req, res) => {
-   console.log("Ruta /es/ posteada.")
- })
 
 
-app
+router
  .get("/en/", function(req, res) => {
  res.render("https://ladorachula.github.io/bin/views_ooc/en.html");
  })
- .post(function(req, res) => {
-   console.log("Ruta /en/ posteada.")
- })
 
-app
+router
  .get("/github/", function(req, res) => {
  res.render("https://ladorachula.github.io/bin/views_ooc/github.html");
  })
- .post(function(req, res) => {
-   console.log("Ruta /github/ posteada.")
- })
 
-app
+router
  .get("/discord/", function(req, res) => {
  res.render("https://ladorachula.github.io/bin/views_ooc/discord.html");
  })
- .post(function(req, res) => {
-   console.log("Ruta /discord/ posteada.")
- })
 
-module.exports = app;
+module.exports = router;
